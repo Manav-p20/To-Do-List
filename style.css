@@ -1,0 +1,102 @@
+/* General reset to ensure consistent styling across different browsers */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Set font family for the body text */
+    background-color: #50b5c3; /* Light teal background color */
+    display: flex; /* Use flexbox layout for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container for the to-do list */
+.container {
+    background-color: rgb(255, 254, 254); /* White background for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+    width: 100%; /* Full width of its parent */
+    max-width: 500px; /* Maximum width of the container */
+    padding: 50px; /* Padding inside the container */
+    box-sizing: border-box; /* Include padding and border in the container's total width and height */
+}
+
+/* Input section styling */
+.input-section {
+    display: flex; /* Use flexbox layout for aligning input and button */
+    margin-bottom: 20px; /* Margin below the input section */
+}
+
+#taskInput {
+    flex: 1; /* Allow input field to grow and fill available space */
+    padding: 10px; /* Padding inside the input field */
+    font-size: 16px; /* Font size for the input text */
+    border: 1px solid #ccc; /* Light gray border around the input field */
+    border-radius: 4px; /* Rounded corners for the input field */
+}
+
+#addButton {
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size for the button text */
+    color: white; /* Text color of the button */
+    background-color: #007bff; /* Blue background color for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#addButton:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* List styling */
+#taskList {
+    list-style: none; /* Remove default list styling */
+}
+
+.task-item {
+    display: flex; /* Use flexbox layout for aligning checkbox, text, and button */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Padding inside each task item */
+    border-bottom: 1px solid #ddd; /* Light gray border below each task item */
+}
+
+.task-item:last-child {
+    border-bottom: none; /* Remove bottom border from the last item */
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and task text */
+}
+
+.task-item button {
+    margin-left: auto; /* Push button to the right side */
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: #dc3545; /* Red text color for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.task-item button:hover {
+    color: #c82333; /* Darker red color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    #taskInput {
+        font-size: 14px; /* Smaller font size for input text */
+    }
+
+    #addButton {
+        font-size: 14px; /* Smaller font size for button text */
+    }
+}
