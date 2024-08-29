@@ -19,7 +19,7 @@ This is a simple web-based to-do list application built using HTML, CSS, and Jav
 
 1. **Clone the Repository** (or download the ZIP file):
     ```bash
-    git clone https://github.com/yourusername/todo-list.git
+    [git clone https://github.com/Manav-p20/To-Do-List.git
     ```
    
 2. **Navigate to the Project Directory**:
